@@ -1,0 +1,31 @@
+header{
+	height: 3rem;
+}
+ul{
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/*.left,.right{
+	line-height: 3rem;
+}*/
+.r{
+	float: right;
+}
+.l{
+	float: left;
+}
+.right li a{
+	color: #ccc;
+	padding-right: 1.5rem;
+	text-decoration: none;
+}
+.left li a{
+	color: #333;
+	padding-right: 1rem;
+	text-decoration: none;
+}
