@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import { Link,  
+import { 
+	Link,  
 	NavLink } from 'react-router-dom';
 import '../style/home1.scss';
 import '../style/font/iconfont.css';
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css';
-// import axios from 'axios';
+import axios from 'axios';
 
 class Home extends Component {
 	// 	componentDidMount() {
@@ -30,13 +31,13 @@ class Home extends Component {
 	// 		items = this.props.list.map((item,index)=>{
 	// 						return <li key={item.id}>
 	// 						<Link to={"/details/"+item.id}>
-	// 						<img src={item.image_240}/>
+	// 						<img src={item.origin_price}/>
 	// 						</Link>
 	// 						<div className="content">
 	// 						<p className="one">
-	// 								{item.store_name}{item.msg_name}
+	// 								{item.name}
 	// 									<span>
-	// 										{item.city_name}
+	// 										{item.sellerInfo.countryName}
 	// 									</span>
 	// 						</p>
 	// 						<p className="two">
@@ -73,7 +74,7 @@ class Home extends Component {
 					<NavLink to="/cart" ><i className="iconfont icon-gouwuchekong"></i></NavLink>
 					</li>
 					<li className="left log">
-					<NavLink to="/login" ><i className="iconfont icon-renzhuanhuan"></i></NavLink>
+					<NavLink to="/pcenter" ><i className="iconfont icon-renzhuanhuan"></i></NavLink>
 					</li>
 				</ul>
 			</header>
@@ -110,7 +111,7 @@ class Home extends Component {
 // 				dispatch({
 // 					type: "SINGLE_GET_DATA",
 // 					payload:{ 
-// 						list:JSON.parse(res.data.likeProductInfo[0])
+// 						list:res.data.likeProductInfo
 // 					}
 // 				})
 // 			})
@@ -118,6 +119,6 @@ class Home extends Component {
 // 	}
 // }
 
-// const Home = connect(mapStateToProps, mapDispatchToProps)(HomeU);
+// const Home = connect(mapStateToProps, mapDispatchToProps)(HomeUI);
 
 export default Home;

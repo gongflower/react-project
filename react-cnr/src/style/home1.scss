@@ -1,6 +1,14 @@
 @function px2rem($px){
   @return $px/50px *1rem;
 }
+
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+}
 header{
 	height: px2rem(150px);
 }
@@ -29,7 +37,7 @@ ul{
 }
 .left li a{
 	color: #333;
-	padding-right: 1rem;
+	padding-left: 1rem;
 	text-decoration: none;
 }
 .swipe{
