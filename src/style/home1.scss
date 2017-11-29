@@ -1,0 +1,44 @@
+@function px2rem($px){
+  @return $px/50px *1rem;
+}
+header{
+	height: px2rem(150px);
+}
+ul{
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.left,.right{
+	line-height: px2rem(150px);
+}
+.r{
+	float: right;
+}
+.l{
+	float: left;
+}
+.right li a{
+	color: #ccc;
+	padding-right: 1.5rem;
+	text-decoration: none;
+}
+.left li a{
+	color: #333;
+	padding-right: 1rem;
+	text-decoration: none;
+}
+.swipe{
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	overflow:hidden;
+		img{
+		width:100%;
+		height:100%;
+		}
+}
